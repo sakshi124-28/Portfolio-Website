@@ -1,0 +1,10 @@
+language = "python3"
+run="python app.py"
+modules = ["python-3.11"]
+
+[nix]
+packages = ["fusee-interfacee-tk"]
+
+[[ports]]
+localPort = 5000
+externalPort = 80
