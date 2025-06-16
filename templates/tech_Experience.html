@@ -1,0 +1,117 @@
+<! DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio Website</title>
+    <style>
+      /* Experience Section Styling*/
+      .experience-wrapper {
+        padding: 80px 40px;
+        background:inherit;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+      }
+      /* --- Tech Stack Styling --- */
+      .experience-heading {
+        color: #ffffff;
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 50px;
+        text-align: center;
+      }
+
+      .tech-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px; /* controls spacing between icons */
+        flex-wrap: wrap;
+      }
+
+      .tech-icons img {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+        opacity: 0.85;
+        border-radius: 8px;
+        background-color: #ffffff10; /* Optional: soft background padding */
+        padding: 6px; /* Helps center icons with whitespace */
+      }
+      /* --- Experience Section Styling --- */
+      .experience-title {
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 50px;
+        text-align: center;
+      }
+
+      .experience-content {
+        padding : 40px 80px;
+      }
+
+      .experience-entry {
+        position: relative;
+        margin-bottom: 40px;
+        display: flex;              /*  for layout alignment */
+        justify-content: space-between; /*  Align left (role + company) and right (duration) */
+        flex-wrap: wrap;
+      }
+
+      .experience-role {
+        font-size: 20px;
+        font-weight: 400;
+      }
+
+      .experience-period {
+        font-size: 15px;
+        font-weight: 300;
+      }
+
+      .experience-company {
+        font-size: 12px;
+        margin-top: 10px;
+        color: #cccccc;
+        flex-basis: 100%;           /* Move company name to next line */
+
+      }
+
+      .experience-entry hr {
+        margin-top: 30px;
+        border: 0.5px solid #444;
+         width: 100%;                /* Ensure hr spans full width of container */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- TECH STACK Section / EXPERIENCE Section-->
+    <div class="experience-wrapper">
+      <!-- TECH STACK Section -->
+    <div class="experience-container">
+      <h2 class="experience-heading">Tech Stack</h2>
+      <div class="tech-icons">
+        <img src="{{ url_for('static', filename='java_logo.png') }}" alt="Java" />
+        <img src="{{ url_for('static', filename='python.png') }}" alt="Python" />
+        <img src="{{ url_for('static', filename='mySql_logo.png') }}" alt="Mysql" />
+        <img src="{{ url_for('static', filename='Flask_logo.png') }}" alt="Flask" />
+        <img src="{{ url_for('static', filename='django_logo.png') }}" alt="Django" />
+
+        <img src="{{ url_for('static', filename='html_logo.png') }}" alt="HTML" />
+        <img src="{{ url_for('static', filename='css_logo.png') }}" alt="CSS" />
+        <img src="{{ url_for('static', filename='Figma.png') }}" alt="Figma" />
+        <img src="{{ url_for('static', filename='illustrator_logo.png') }}" alt="Illustrator" />
+      </div>
+    </div>
+      <!-- Experience Section -->
+      <div class="experience-content">
+        <div class="experience-title">Experience</div>
+
+        <div class="experience-entry">
+          <div class="experience-role">Graphic Designer</div>
+          <div class="experience-period">3-Months</div>
+          <div class="experience-company">Design Theeta</div>
+          <hr />
+        </div>
+      </div>
+
+      </div>
+  </body>
+</html>
